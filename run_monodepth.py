@@ -28,7 +28,8 @@ def run(input_path, output_path, model_path, model_type="dpt_hybrid", optimize=T
     print("initialize")
 
     # select device
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    #device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = "cpu"
     print("device: %s" % device)
 
     # load network
